@@ -12,7 +12,7 @@ import meeting3 from '../assets/meeting3.webp'
 import meeting6 from '../assets/meeting6.webp'
 import meeting7 from '../assets/meeting7.webp'
 import Training3 from '../assets/Training3.webp'
-import Training from '../assets/training.webp'
+import Training from '../assets/Training.webp'
 import rural2 from '../assets/rural2.webp'
 import schoolEvent from '../assets/schoolEvent.webp'
 
