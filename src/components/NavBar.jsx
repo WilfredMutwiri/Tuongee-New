@@ -12,10 +12,10 @@ export function NavbarComponent() {
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <Navbar.Link href="#" active>
+        <Navbar.Link href="/" active>
           Home
         </Navbar.Link>
-        <Navbar.Link href="#">About Us</Navbar.Link>
+        <Navbar.Link href="/about">About Us</Navbar.Link>
         <Navbar.Link href="#">Our Events</Navbar.Link>
         <Navbar.Link href="#">Reviews</Navbar.Link>
         <Navbar.Link href="#">Contacts</Navbar.Link>

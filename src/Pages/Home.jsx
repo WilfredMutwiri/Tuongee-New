@@ -185,10 +185,9 @@ export default function Home() {
           <div className='relative bg-gray-100 pt-16'>
           <h2 className=' text-center font-semibold text-3xl border-b-2 border-cyan-500 w-72 items-center justify-center mx-auto'>What We Do!</h2>
             <div className='block w-11/12 mx-auto md:flex gap-5 pt-10'>
-
             {
                 whatWeDoData.map((item,index)=>(
-                    <CardComponent className="w-52 h-10 " key={index} title={item.title} description={item.description} imgSrc={item.image}/>      
+                    <CardComponent className=" " key={index} title={item.title} description={item.description} imgSrc={item.image}/>      
                 )
             )
             }
@@ -287,7 +286,7 @@ At Tuongee Initiative, we empower young people with knowledge and support to mak
                 <li>Partnered with Schools to Keep Girls in Education</li>
               </ul>
             </p>
-            <a href='/products'>
+            <a href='#'>
             <h2 className='bg-cyan-400 p-2 w-48 rounded-md shadow-sm text-center font-semibold text-gray-800 mt-10 flex gap-2 mx-auto md:mx-0'>Join us Today<span className="text-orange-800 text-2xl justify-center items-center"><IoArrowForwardCircleOutline/></span></h2></a>
           </div>
         </div>
