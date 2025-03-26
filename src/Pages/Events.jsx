@@ -6,6 +6,7 @@ import { CardComponent } from "../components/card";
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import event1 from '../assets/event1.webp'
 import meeting1 from '../assets/meeting1.webp'
+import meeting4 from '../assets/meeting4.webp'
 import meeting5 from '../assets/meeting5.webp'
 import meeting2 from '../assets/meeting2.webp'
 import meeting3 from '../assets/meeting3.webp'
@@ -17,11 +18,46 @@ import Training from '../assets/Training.webp'
 import rural2 from '../assets/rural2.webp'
 import schoolEvent from '../assets/schoolEvent.webp'
 
-const About = () => {
+
+
+const Events = () => {
+
+    const eventsData=[
+        {
+            id:1,
+            name:"Youth Empowerment Workshop",
+            description:"Training youths of St. Patrick Catholic Church Gatunga on the National and county government government policies of Sexual Reproductive Health Rights-SRHR",
+            image:meeting4
+        },
+        {
+            id:2,
+            name:"Church leaders training",
+            description:"Training various church leaders and community mobilizer on the various policies on FGM, Child Marriages and other Sexual Reproductive Health Rights-SRHR",
+            image:meeting2
+        },
+        {
+            id:3,
+            name:"Consultative meeting with Tharaka-Nithi County",
+            description:"Attending a consultative meeting on the actualization of the Tharakanithi County Act FGM Act of 2021",
+            image:meeting5
+        },
+        {
+            id:4,
+            name:"Partnering with Plan International",
+            description:"Representing wake and Shine SHG in a partnership meeting with Plan International which was aimed at coming up with an action plan on how to implement Break Free Project",
+            image:meeting6
+        },
+        {
+            id:5,
+            name:"Cunsultative meeting with the Clergy",
+            description:"Having a consultative meeting with pastors and Church elders on how to effectively deliver SRHR related information in churches and the community",
+            image:meeting7
+        }
+    ]
 
     const handleJoin=()=>{
         const phoneNo="254714938280";
-        const message=`Hello Joel Munene, I visited Tuongee Initiative  website and I'm interested in joining you.How do I proceed? Thank you.`
+        const message=`Hello Joel Munene, I visited Tuongee Initiative  website and I'm interested in joining you.How do I proceed? Thank you.`;
         const encodedMessage=encodeURIComponent(message);
         const whatsappUrl=`https://wa.me/${phoneNo}?text=${encodedMessage}`;
         window.open(whatsappUrl,"_blank");
@@ -56,7 +92,7 @@ const About = () => {
                       </div>
                       </div>
                       </div>
-                      <h2 className='z-50 relative text-center font-serif text-xl md:text-3xl pt-5 text-cyan-500'>Who We Are!</h2>
+                      <h2 className='z-50 relative text-center font-serif text-xl md:text-3xl pt-5 text-cyan-500'>Empowering  both the Youth and the Old with One Event at a Time</h2>
                     <div className='flex gap-5 justify-center mt-28 md:mt-10'>
                       <Button gradientDuoTone="greenToBlue" outline onClick={handleJoin}>Join Us Today</Button>
                     </div>
@@ -67,6 +103,7 @@ const About = () => {
                   <main>
                     <section className='relative z-50 mt-[700px] '>
                         <div className="flex flex-row items-center justify-center gap-10 p-5 w-11/12 mx-auto">
+
                         <div className="w-[50%]">
                         <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                     {
@@ -79,14 +116,9 @@ const About = () => {
                     </Carousel>
                         </div>
                             <div className="w-[50%] -mt-12 pl-4">
-                                <h2 className="font-semibold text-3xl">About us</h2>
+                                <h2 className="font-semibold text-3xl">~ Bringing Change Through Action ~</h2>
                                 <p className="leading-relaxed pt-4">
-                                Adolescent and young people have various needs on SRHR. Looking back to the
-                                backgrounds we grew up, it’s clear that many parents and guardians are not in
-                                position of providing solutions to the SRHR needs of the young people.
-                                As a result, tubonge is created to eliminate this gap. This is a platform
-                                that you can ask anything on SRHR and you will get a reply as soon as
-                                possible.
+                                At Tuongee Initiative, we believe that real change happens when people come together. Our events are designed to educate, empower, and inspire young people to take control of their futures. From awareness workshops and mentorship programs to community outreach and advocacy campaigns, every event is a step toward a world free from early marriages and teenage pregnancies. Join us in making a difference
                                 </p>
                                 <div className="pt-10">
                                 <Button gradientDuoTone="greenToBlue" outline onClick={handleJoin}>Join Us Today</Button>
@@ -94,9 +126,34 @@ const About = () => {
                             </div>
                         </div>
                     </section>
+                    {/* events section */}
+                    <section>
+                    <div>
+                        <h2 className="text-center font-semibold text-3xl pb-5 pt-10">~ Be Part of the Change! ~</h2>
+                        <p className="text-center leading-relaxed">
+                        At Tuongee Initiative, our events are more than just gatherings;they are opportunities to learn, share, and take action. Whether it's workshops, awareness campaigns, or community outreach, every event plays a role in shaping a better future for our youth. Explore our upcoming events and join us in making a difference!
+                        </p>
+                    </div>
+                        <div className='block w-11/12 mx-auto md:flex gap-5 pt-10'>
+                            {
+                                eventsData.slice(0,3).map((item,index)=>(
+                                    <CardComponent className=" " key={index} title={item.name} description={item.description} imgSrc={item.image}/>      
+                                    )
+                                )
+                            }
+                        </div>
+                        <div className='block w-11/12 mx-auto md:flex gap-5 pt-10 pb-10'>
+                            {
+                                eventsData.slice(3).map((item,index)=>(
+                                    <CardComponent className=" " key={index} title={item.name} description={item.description} imgSrc={item.image}/>      
+                                    )
+                                )
+                            }
+                        </div>
+                    </section>
                   </main>
         </div>
     )
 }
 
-export default About;
+export default Events;

@@ -104,8 +104,8 @@ const updatesData=[
 
 
 const handleJoin=()=>{
-  const phoneNo="254728205891";
-  const message=`Hello Gift, I visited BeachLifeFitness website and I'm interested in joining your gym.How do I proceed? Thanks.`;
+  const phoneNo="254714938280";
+  const message=`Hello Joel Munene, I visited Tuongee Initiative  website and I'm interested in joining you.How do I proceed? Thank you`;
   const encodedMessage=encodeURIComponent(message);
   const whatsappUrl=`https://wa.me/${phoneNo}?text=${encodedMessage}`;
   window.open(whatsappUrl,"_blank");
@@ -207,12 +207,12 @@ At Tuongee Initiative, we believe that awareness is the first step to change. Th
         </div>
 
 
-      {/* updates section */}
+      {/*events section */}
       <section>
       <div className='relative pt-14 pb-5'>
         <div className='flex justify-between w-11/12 mx-auto'>
         <h2 className=' text-center font-semibold text-3xl border-b-2 border-cyan-500 w-72 items-center justify-center mx-auto'>Featured Events!</h2>
-        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'><a href='/updates'>View All</a><FaArrowRight className=' text-lg pl-1'/></Label>
+        <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'><a href='/events'>View All</a><FaArrowRight className=' text-lg pl-1'/></Label>
         </div>
         <div className='pt-14 mx-auto block md:flex gap-10 w-11/12'>
 
@@ -224,7 +224,7 @@ At Tuongee Initiative, we believe that awareness is the first step to change. Th
             <hr className='w-10/12 mx-auto'/>
             <p className='pt-1 p-3'>{update.desc}</p>
             <div className='p-3 flex justify-between'>
-          <Button className="" gradientDuoTone="cyanToBlue"><a href='#'>Read More...</a></Button>
+          <Button className="" gradientDuoTone="cyanToBlue"><a href='/events'>Read More...</a></Button>
             </div>
               </div>
             ))
@@ -286,8 +286,7 @@ At Tuongee Initiative, we empower young people with knowledge and support to mak
                 <li>Partnered with Schools to Keep Girls in Education</li>
               </ul>
             </p>
-            <a href='#'>
-            <h2 className='bg-cyan-400 p-2 w-48 rounded-md shadow-sm text-center font-semibold text-gray-800 mt-10 flex gap-2 mx-auto md:mx-0'>Join us Today<span className="text-orange-800 text-2xl justify-center items-center"><IoArrowForwardCircleOutline/></span></h2></a>
+            <h2 className='bg-cyan-400 p-2 w-48 rounded-md shadow-sm text-center font-semibold text-gray-800 mt-10 flex gap-2 mx-auto md:mx-0 cursor-pointer' onClick={handleJoin}>Join us Today<span className="text-orange-800 text-2xl justify-center items-center"><IoArrowForwardCircleOutline/></span></h2>
           </div>
         </div>
 

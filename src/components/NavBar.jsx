@@ -16,9 +16,9 @@ export function NavbarComponent() {
           Home
         </Navbar.Link>
         <Navbar.Link href="/about">About Us</Navbar.Link>
-        <Navbar.Link href="#">Our Events</Navbar.Link>
+        <Navbar.Link href="/events">Our Events</Navbar.Link>
         <Navbar.Link href="#">Reviews</Navbar.Link>
-        <Navbar.Link href="#">Contacts</Navbar.Link>
+        <Navbar.Link href="/contacts">Contacts</Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
   );
