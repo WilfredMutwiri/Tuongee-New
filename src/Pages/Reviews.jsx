@@ -166,7 +166,7 @@ const Reviews = () => {
                                     }
                                 </div>):(
                                     <div>
-                                        <h1 className="text-3xl">No available reviews</h1>
+                                        <h1 className="text-cyan-600 text-center font-semibold bg-gray-100">No available reviews</h1>
                                     </div>
                                 )
                             }
