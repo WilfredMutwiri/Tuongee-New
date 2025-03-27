@@ -153,7 +153,7 @@ const Reviews = () => {
                             }
                         <div className='w-11/12 mx-auto bg-gray-50'>
                             {
-                                reviews.lenght > 0 ?(
+                                reviews?(
                                 <div>
                                     {
                                         reviews.map((review,index)=>(
