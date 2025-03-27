@@ -6,6 +6,7 @@ import About from './Pages/About'
 import { FooterComponent } from './components/Footer'
 import Events from './Pages/Events'
 import ContactPage from './Pages/contacts'
+import Reviews from './Pages/Reviews'
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path='/about' element={<About/>}/>
             <Route path="/events" element={<Events/>}/>
+            <Route path='/reviews' element={<Reviews/>}/>
             <Route path='/contacts' element={<ContactPage/>}/>
           </Routes>
           <FooterComponent/>
