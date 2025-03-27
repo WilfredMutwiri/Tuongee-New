@@ -153,7 +153,7 @@ const Reviews = () => {
                             }
                         <div className='w-11/12 mx-auto bg-gray-50'>
                             {
-                                reviews ?(
+                                reviews.lenght > 0 ?(
                                 <div>
                                     {
                                         reviews.map((review,index)=>(
@@ -166,7 +166,7 @@ const Reviews = () => {
                                     }
                                 </div>):(
                                     <div>
-                                        <h1 className="text-3xl">Loading...</h1>
+                                        <h1 className="text-3xl">No available reviews</h1>
                                     </div>
                                 )
                             }
@@ -175,7 +175,7 @@ const Reviews = () => {
                             {
                                 isError && (
                                 <div className=" bg-red-100 p-2 w-8/12 mx-auto rounded-md border-2">
-                                    <h2 className="text-center text-red-600">An error occured. Please refresh the page...</h2>
+                                    <h2 className="text-center text-red-600">An error occured.Please check your internet connection and try again...</h2>
                                 </div>)
                             }
                         </div>
