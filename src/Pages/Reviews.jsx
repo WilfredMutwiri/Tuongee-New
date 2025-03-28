@@ -128,9 +128,9 @@ const Reviews = () => {
                       </div>
                       </div>
                       </div>
-                      <h2 className='z-50 relative text-center font-serif text-xl md:text-3xl pt-5 text-cyan-500'>Let us know what you think!
+                      <h2 className='z-50 relative text-center font-serif text-2xl md:text-3xl pt-5 text-cyan-500'>Let us know what you think!
                       </h2>
-                    <div className='flex gap-5 justify-center mt-28 md:mt-10'>
+                    <div className='mt-28 md:mt-10'>
                       <Button gradientDuoTone="greenToBlue" outline onClick={()=>setModalOpen(true)}>Leave us a Review</Button>
                     </div>
                   </div>
@@ -139,9 +139,9 @@ const Reviews = () => {
                   </header>
                   <main>
                     <section  className="relative z-50 mt-[700px] pb-10">
-                    <div className="flex justify-between w-11/12 mx-auto mb-5">
-                        <h2 className="text-center text-2xl font-semibold">What our users have to say...</h2>
-                        <Button onClick={()=>setModalOpen(true)}>Leave a review</Button>
+                    <div className="flex justify-between w-11/12 mx-auto mb-5 items-center">
+                        <h2 className="text-center text-base  md:text-2xl font-semibold">What our users have to say...</h2>
+                        <Button onClick={()=>setModalOpen(true)} size="sm">Leave a review</Button>
                     </div>
 
                         {/* reviews section */}

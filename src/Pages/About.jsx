@@ -66,8 +66,8 @@ const About = () => {
                   </header>
                   <main>
                     <section className='relative z-50 mt-[700px] '>
-                        <div className="flex flex-row items-center justify-center gap-10 p-5 w-11/12 mx-auto">
-                        <div className="w-[50%]">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-10 p-5 w-11/12 mx-auto">
+                        <div className="w-[100%] md:w-[50%]">
                         <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                     {
                       aboutImages.map((image,index)=>(
@@ -78,7 +78,7 @@ const About = () => {
                     }
                     </Carousel>
                         </div>
-                            <div className="w-[50%] -mt-12 pl-4">
+                            <div className="w-[100%] md:w-[50%] -mt-0 md:-mt-12 pl-4">
                                 <h2 className="font-semibold text-3xl">About us</h2>
                                 <p className="leading-relaxed pt-4">
                                 Adolescent and young people have various needs on SRHR. Looking back to the

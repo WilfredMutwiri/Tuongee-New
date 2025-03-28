@@ -158,25 +158,25 @@ export default function Home() {
       <main>
         {/* highlight section */}
         <div className='relative z-50 mt-[700px] '>
-          <div className=' font-semibold w-full md:w-11/12 mx-auto flex pl-0 md:pl-12 pr-0 md:pr-10 border-r-4 md:border-r-8 border-cyan-500 border-l-4 md:border-l-8  rounded-tl-0 md:rounded-tl-[200px]  bg-gray-500 justify-between gap-2 md:gap-6'>
-          <div className='border-r-8 h-full pt-8 pb-8 pr-0 md:pr-5'>
-            <h2 className='font-bold text-sm md:text-3xl text-white'>Our impact <br/>In Numbers!!</h2>
+          <div className=' font-semibold w-[97%] md:w-11/12 mx-auto flex pl-0 md:pl-12 pr-0 md:pr-10 border-r-4 md:border-r-8 border-cyan-500 border-l-4 md:border-l-8  rounded-tl-0 md:rounded-tl-[200px]  bg-gray-500 justify-between gap-2 md:gap-6'>
+          <div className='border-r-4 md:border-r-8 h-full pt-8 pb-8 pr-0 md:pr-5 w-[50%] md:w-auto'>
+            <h2 className='font-bold text-xs md:text-3xl text-white pl-2 md:pl-0'>Our impact <br/>In Numbers!!</h2>
           </div>
           <div className='pt-8 pb-8'>
-            <h2 className='font-bold text-lg md:text-4xl text-cyan-400'>150+</h2>
-            <h3 className='text-center text-sm text-white'>Members</h3>
+            <h2 className='font-bold text-sm md:text-4xl text-cyan-400'>150+</h2>
+            <h3 className='text-center text-xs text-white'>Members</h3>
           </div>
           <div className='pt-8 pb-8'>
-            <h2 className='font-bold text-lg md:text-4xl text-cyan-400'>50+</h2>
-            <h3 className='text-center text-sm text-white'>Benefitted Youth</h3>
+            <h2 className='font-bold text-sm md:text-4xl text-cyan-400'>50+</h2>
+            <h3 className='text-center text-xs text-white'>Benefitted Youth</h3>
           </div>
           <div className='pt-8 pb-8'>
-            <h2 className='font-bold text-lg md:text-4xl text-cyan-400'>100+</h2>
-            <h3 className='text-center text-sm text-white'>Current Programs</h3>
+            <h2 className='font-bold text-sm md:text-4xl text-cyan-400'>100+</h2>
+            <h3 className='text-center text-xs text-white'>Current Programs</h3>
           </div>
-          <div className='pt-8 pb-8'>
-            <h2 className='font-bold text-lg md:text-4xl text-cyan-500'>100+</h2>
-            <h3 className='text-center text-sm text-white'>Awaireness Campaigns</h3>
+          <div className='pt-8 pb-8 pr-2 md:pr-0'>
+            <h2 className='font-bold text-sm md:text-4xl text-cyan-500'>100+</h2>
+            <h3 className='text-center text-xs text-white'>Awaireness Campaigns</h3>
           </div>  
           </div>
         </div>
@@ -211,7 +211,7 @@ At Tuongee Initiative, we believe that awareness is the first step to change. Th
       <section>
       <div className='relative pt-14 pb-5'>
         <div className='flex justify-between w-11/12 mx-auto'>
-        <h2 className=' text-center font-semibold text-3xl border-b-2 border-cyan-500 w-72 items-center justify-center mx-auto'>Featured Events!</h2>
+        <h2 className=' text-center font-semibold text-2xl md:text-3xl border-b-2 border-cyan-500 w-60 md:w-72 items-center justify-center mx-auto'>Featured Events!</h2>
         <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'><a href='/events'>View All</a><FaArrowRight className=' text-lg pl-1'/></Label>
         </div>
         <div className='pt-14 mx-auto block md:flex gap-10 w-11/12'>
@@ -247,7 +247,7 @@ At Tuongee Initiative, we empower young people with knowledge and support to mak
       {/* achievements section */}
       <section>
         <div className='pt-16 pb-10 bg-gray-100'>
-        <h2 className=' text-center font-semibold text-3xl border-b-2 border-cyan-500 w-72 items-center justify-center mx-auto'>Our Achievements!</h2>
+        <h2 className=' text-center font-semibold text-2xl md:text-3xl border-b-2 border-cyan-500 w-72 items-center justify-center mx-auto'>Our Achievements!</h2>
 
         <div className='flex justify-between w-11/12 mx-auto'>
         </div>
@@ -304,7 +304,7 @@ At Tuongee Initiative, we empower young people with knowledge and support to mak
       <section>
         <div>
         <div className='flex justify-between w-11/12 mx-auto mt-10'>
-        <h2 className=' text-center font-semibold text-3xl border-b-2 border-cyan-500 w-72 items-center justify-center mx-auto'>Our Blogs!</h2>
+        <h2 className=' text-center font-semibold text-2xl md:text-3xl border-b-2 border-cyan-500 w-60 md:w-72 items-center justify-center mx-auto'>Our Blogs!</h2>
         <a href="#">
         <Label className=' mt-4 justify-center cursor-pointer text-yellow-500 hover:text-blue-600 flex'>View All <FaArrowRight className=' text-lg pl-1'/></Label>
         </a>

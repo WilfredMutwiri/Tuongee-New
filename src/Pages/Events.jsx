@@ -102,9 +102,9 @@ const Events = () => {
                   </header>
                   <main>
                     <section className='relative z-50 mt-[700px] '>
-                        <div className="flex flex-row items-center justify-center gap-10 p-5 w-11/12 mx-auto">
+                        <div className="flex flex-col md:flex-row items-center justify-center gap-10 p-5 w-11/12 mx-auto">
 
-                        <div className="w-[50%]">
+                        <div className="w-[100%] md:w-[50%]">
                         <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true}>
                     {
                       aboutImages.map((image,index)=>(
@@ -115,8 +115,8 @@ const Events = () => {
                     }
                     </Carousel>
                         </div>
-                            <div className="w-[50%] -mt-12 pl-4">
-                                <h2 className="font-semibold text-3xl">~ Bringing Change Through Action ~</h2>
+                            <div className="w-[100%] md:w-[50%] -mt-0 md:-mt-12 pl-4">
+                                <h2 className="font-semibold text-2xl md:text-3xl">~ Bringing Change Through Action ~</h2>
                                 <p className="leading-relaxed pt-4">
                                 At Tuongee Initiative, we believe that real change happens when people come together. Our events are designed to educate, empower, and inspire young people to take control of their futures. From awareness workshops and mentorship programs to community outreach and advocacy campaigns, every event is a step toward a world free from early marriages and teenage pregnancies. Join us in making a difference
                                 </p>
@@ -129,8 +129,8 @@ const Events = () => {
                     {/* events section */}
                     <section>
                     <div>
-                        <h2 className="text-center font-semibold text-3xl pb-5 pt-10">~ Be Part of the Change! ~</h2>
-                        <p className="text-center leading-relaxed">
+                        <h2 className="text-center font-semibold text-2xl md:text-3xl pb-5 pt-10">~ Be Part of the Change! ~</h2>
+                        <p className="text-left md:text-center leading-relaxed pl-4">
                         At Tuongee Initiative, our events are more than just gatherings;they are opportunities to learn, share, and take action. Whether it's workshops, awareness campaigns, or community outreach, every event plays a role in shaping a better future for our youth. Explore our upcoming events and join us in making a difference!
                         </p>
                     </div>
